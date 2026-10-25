@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { useCompare } from '../context/CompareContext';
 import { useLocation } from '../context/LocationContext';
-import { ShoppingCart, Scale, Search, User, LogOut, Shield, MapPin, Menu, ChevronDown, Sparkles, CheckCircle2 } from 'lucide-react';
+import { api } from '../api/client';
+import { ShoppingCart, Scale, Search, User, LogOut, Shield, MapPin, Menu, ChevronDown, Sparkles } from 'lucide-react';
 
 export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
   const { user, logout, isAdmin } = useAuth();
@@ -11,9 +12,14 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
   const { selectedProducts } = useCompare();
   const { location, setIsModalOpen } = useLocation();
 
+  const [categories, setCategories] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSearchCat, setSelectedSearchCat] = useState('all');
   const [showAccountDropdown, setShowAccountDropdown] = useState(false);
+
+  useEffect(() => {
+    api.getCategories().then(setCategories).catch(console.error);
+  }, []);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -124,7 +130,7 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
           </div>
         </div>
 
-        {/* Modern Unified Search Bar */}
+        {/* Modern Unified Search Bar with Dynamic Categories */}
         <form
           onSubmit={handleSearchSubmit}
           style={{
@@ -150,20 +156,21 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
               cursor: 'pointer',
               borderRight: '1px solid #e2e8f0',
               outline: 'none',
-              fontWeight: 600
+              fontWeight: 600,
+              maxWidth: '170px'
             }}
           >
             <option value="all">All Departments</option>
-            <option value="1">Smartphones</option>
-            <option value="2">Laptops</option>
-            <option value="3">Audio & Wearables</option>
+            {categories.map((c) => (
+              <option key={c.id} value={c.id}>{c.name}</option>
+            ))}
           </select>
 
           <input
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Search products by brand, specs, or category..."
+            placeholder="Search fashion, jewelry, electronics, furniture, automotive..."
             style={{
               flex: 1,
               padding: '0 14px',
@@ -195,7 +202,6 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
             title="Search"
           >
             <Search size={16} />
-            <span style={{ display: 'none' }}>Search</span>
           </button>
         </form>
 
@@ -387,17 +393,17 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
         </div>
       </div>
 
-      {/* 2. Secondary Clean Slate Sub-Bar (#1e293b) */}
+      {/* 2. Secondary Clean Slate Sub-Bar with All Categories (#1e293b) */}
       <div
         style={{
           background: '#1e293b',
           color: '#cbd5e1',
-          height: '40px',
+          height: '42px',
           display: 'flex',
           alignItems: 'center',
           padding: '0 20px',
-          gap: '20px',
-          fontSize: '0.84rem',
+          gap: '12px',
+          fontSize: '0.82rem',
           fontWeight: 600,
           borderBottom: '1px solid #334155',
           overflowX: 'auto'
@@ -412,28 +418,21 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
             cursor: 'pointer',
             color: 'white',
             fontWeight: 700,
-            padding: '4px 6px',
-            borderRadius: '4px'
+            padding: '4px 8px',
+            borderRadius: '4px',
+            background: 'rgba(255,255,255,0.06)',
+            whiteSpace: 'nowrap'
           }}
-          onMouseOver={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
-          onMouseOut={(e) => (e.currentTarget.style.background = 'transparent')}
         >
-          <Menu size={16} />
-          <span>All Categories</span>
+          <Menu size={15} />
+          <span>All Departments</span>
         </div>
 
-        {[
-          { label: 'Smartphones', catId: '1' },
-          { label: 'Laptops', catId: '2' },
-          { label: 'Audio & Wearables', catId: '3' },
-          { label: 'Top Deals', page: 'products' }
-        ].map((item, idx) => (
+        {/* Dynamic Category Nav Items */}
+        {categories.map((cat) => (
           <span
-            key={idx}
-            onClick={() => {
-              if (item.catId) onNavigate('products', { category_id: item.catId });
-              else onNavigate(item.page);
-            }}
+            key={cat.id}
+            onClick={() => onNavigate('products', { category_id: cat.id })}
             style={{
               cursor: 'pointer',
               whiteSpace: 'nowrap',
@@ -450,7 +449,7 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
               e.currentTarget.style.background = 'transparent';
             }}
           >
-            {item.label}
+            {cat.name}
           </span>
         ))}
 
@@ -467,18 +466,13 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
               fontWeight: 700,
               display: 'flex',
               alignItems: 'center',
-              gap: '4px'
+              gap: '4px',
+              marginLeft: 'auto'
             }}
           >
-            <Shield size={13} /> Admin Portal
+            <Shield size={13} /> Admin
           </span>
         )}
-
-        {/* Real-time system status indicator (Replaced festival banner) */}
-        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.78rem', color: '#94a3b8' }}>
-          <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#10b981', display: 'inline-block' }} />
-          <span>AI Decision Intelligence Active</span>
-        </div>
       </div>
     </header>
   );

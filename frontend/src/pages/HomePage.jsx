@@ -154,7 +154,7 @@ export default function HomePage({ onNavigate, onSelectProduct }) {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
           <div>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 700 }}>Browse by Category</h2>
-            <p style={{ fontSize: '0.875rem', color: '#64748b' }}>Curated consumer electronics catalog</p>
+            <p style={{ fontSize: '0.875rem', color: '#64748b' }}>Explore electronics, fashion, jewelry, furniture, automotive, and grooming</p>
           </div>
         </div>
 

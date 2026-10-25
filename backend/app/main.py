@@ -18,7 +18,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="AI Powered E-Commerce Customer Intelligence & Personalized Recommendation Platform",
-    description="Poornima University Minor Project API with Multi-Criteria AI Comparison Engine, Location-Aware Checkout, and Personalized Recommendations.",
+    description="AI Powered E-Commerce Customer Intelligence Platform with Multi-Criteria AI Comparison Engine, Location-Aware Checkout, and Personalized Recommendations.",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
@@ -64,7 +64,7 @@ def root():
         "system": "AI Powered E-Commerce Platform",
         "version": "1.0.0",
         "documentation": "/docs",
-        "project": "B.Tech Minor Project - Poornima University"
+        "project": "AI Powered E-Commerce Customer Intelligence Platform"
     }
 
 @app.get("/health")
