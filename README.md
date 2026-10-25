@@ -1,6 +1,6 @@
-# AI Powered E-Commerce Customer Intelligence and Personalized Recommendation Platform
-> **B.Tech Minor Project — Poornima University, Jaipur**  
-> Department of Computer Engineering
+# SmartCommerce AI — Customer Intelligence & Personalized Recommendation Platform
+> **Enterprise-Grade Full-Stack AI E-Commerce Platform**  
+> Dynamic Multi-Criteria Comparison Engine • Location-Aware Checkout • Hybrid Recommender System
 
 [![Live Frontend](https://img.shields.io/badge/Vercel-Live%20App-000000?style=flat&logo=vercel&logoColor=white)](https://ai-ecommerce-intelligence.vercel.app/)
 [![Live Backend](https://img.shields.io/badge/Render-Live%20API-46E3B7?style=flat&logo=render&logoColor=white)](https://ai-ecommerce-api-64m8.onrender.com)
@@ -11,7 +11,7 @@
 [![Tests](https://img.shields.io/badge/Tests-15%2F15%20Passed%20(100%25)-success.svg)](./docs/TEST_REPORT.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A complete, production-deployed full-stack e-commerce intelligence platform built to deliver transparent, preference-weighted AI product comparisons, privacy-first location-aware checkout, and personalized hybrid recommendations.
+A complete, production-deployed full-stack e-commerce intelligence platform built to deliver transparent, preference-weighted AI product comparisons, privacy-first location-aware delivery, aspect-based NLP review analysis, and personalized hybrid recommendations across 9 major commercial departments.
 
 ---
 
@@ -19,99 +19,150 @@ A complete, production-deployed full-stack e-commerce intelligence platform buil
 
 | Component | Platform | Live URL | Description |
 | :--- | :--- | :--- | :--- |
-| **Frontend Web App** | **Vercel** | [https://ai-ecommerce-intelligence.vercel.app/](https://ai-ecommerce-intelligence.vercel.app/) | Live interactive React 18 client application |
-| **Backend API** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com](https://ai-ecommerce-api-64m8.onrender.com) | FastAPI REST service, SQLite database & ML algorithms |
-| **API Docs (Swagger)** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com/docs](https://ai-ecommerce-api-64m8.onrender.com/docs) | Interactive OpenAPI interactive test console |
-| **API Health Check** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com/health](https://ai-ecommerce-api-64m8.onrender.com/health) | Live service status probe |
-| **Source Code** | **GitHub** | [Kunal14695/AI-Ecommerce-Intelligence](https://github.com/Kunal14695/AI-Ecommerce-Intelligence) | Official project repository |
+| **Frontend Web App** | **Vercel** | [https://ai-ecommerce-intelligence.vercel.app/](https://ai-ecommerce-intelligence.vercel.app/) | Interactive React 18 client with modern slate-indigo design |
+| **Backend REST API** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com](https://ai-ecommerce-api-64m8.onrender.com) | FastAPI REST service, SQLite database & ML engines |
+| **Interactive API Docs** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com/docs](https://ai-ecommerce-api-64m8.onrender.com/docs) | Interactive Swagger/OpenAPI documentation console |
+| **API Health Check** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com/health](https://ai-ecommerce-api-64m8.onrender.com/health) | Live service uptime and health probe |
+| **Source Code** | **GitHub** | [Kunal14695/AI-Ecommerce-Intelligence](https://github.com/Kunal14695/AI-Ecommerce-Intelligence) | Official repository |
 
 ---
 
-## 🌟 Primary Features
+## 🏬 Comprehensive 9-Department Catalogue
 
-### 1. AI-Assisted Multi-Criteria Product Comparison (Module 7.4)
-- **Side-by-Side Evaluation**: Compare any two devices across smartphones, laptops, and audio gear.
-- **Min-Max Category Normalization**:
-  - *Benefit Attributes* (higher is better: RAM, Battery, Storage, Refresh Rate):
+The platform features an expansive, realistic e-commerce catalogue across 9 commercial departments, each with structured technical specifications, benefit/cost normalization rules, and aspect-based customer reviews:
+
+| # | Department | Categories & Products Featured | Key Technical / Material Specs |
+| :- | :--- | :--- | :--- |
+| **1** | **Smartphones** | Apple iPhone 15 Pro, Samsung Galaxy S24 Ultra, OnePlus 12, Xiaomi Redmi Note 13 Pro+, Realme 12 Pro+, POCO X6 Pro | RAM (GB), Storage (GB), Battery (mAh), Refresh Rate (Hz), Weight (g) |
+| **2** | **Laptops** | Apple MacBook Air M3, Dell XPS 13 Plus, ASUS ROG Zephyrus G14, Lenovo IdeaPad Slim 5 OLED | RAM (GB), Storage (GB), Battery Life (hrs), Weight (kg), CPU/GPU |
+| **3** | **Audio & Wearables** | Sony WH-1000XM5, Apple AirPods Pro (2nd Gen), boAt Airdopes 141 ANC | Battery Life (hrs), Active Noise Cancellation (%), Driver Size (mm) |
+| **4** | **Fashion & Clothing** | Levi's 511 Slim Fit Stretch Denim, Raymond Pure Wool Tailored Blazer, Adidas Originals Hoodie, Zara Floral Chiffon Maxi Dress, Puma DryCELL Tracksuit | Material Composition (%), Fabric GSM, Fit Type, Stretchability, Care |
+| **5** | **Fashion Accessories** | Ray-Ban Classic Aviator Polarized Sunglasses, Fossil Derrick RFID Leather Wallet, Samsonite Omni PC Carry-On Spinner, Michael Kors Saffiano Tote, Wildcraft 45L Rucksack | UV Protection (%), Shell Durability, RFID Shielding, Capacity (Liters) |
+| **6** | **Jewelry & Luxury Watches** | Tanishq 22KT Yellow Gold Floral Drop Earrings, GIVA 925 Sterling Silver Heart Pendant, Seiko Presage Automatic Watch, Casio G-Shock Carbon Core, Mia by Tanishq 14KT Diamond Ring | Gold Purity (KT / BIS 916), Diamond Carats, Water Resistance (M), Power Reserve |
+| **7** | **Furniture & Living** | Green Soul Monster Ultimate Ergonomic Chair, Wakefit Dual Comfort Queen Mattress, Urban Ladder Solid Sheesham Dining Table, Sleepyhead Bae Sofa, Philips Smart Wi-Fi LED Lamp | Weight Capacity (kg), Foam Density (D), Wood Type (Sheesham), Lumens (lm) |
+| **8** | **Automotive Accessories** | 70mai A500S 2.7K Dual Dash Camera, Steelbird Terminator Full Face Helmet, Bosch EasyPump Cordless Air Inflator, Wavex Carnauba Wax Mirror Polish Kit, Qubo Car Air Purifier | Video Resolution (2.7K), Max Pressure (150 PSI), CADR (m³/h), ISI Certification |
+| **9** | **Beauty & Grooming** | Philips Series 5000 Wet & Dry Beard Trimmer, Dyson Supersonic Intelligent Hair Dryer, Forest Essentials Soundarya 24K Gold Cream | Motor Speed (110k RPM), Precision Steps (0.2mm), Battery Runtime, SPF |
+
+---
+
+## 🌟 Core Machine Learning & Architectural Features
+
+### 1. Multi-Criteria AI Product Comparison Engine
+* **Side-by-Side Evaluation**: Compare any two models within or across categories with transparent mathematical scoring.
+* **Min-Max Benefit vs. Cost Normalization**:
+  * *Benefit Attributes* (Higher is better: RAM, Battery, Storage, Refresh Rate, Gold Purity, Pressure PSI):
     $$n = \frac{x - \min}{\max - \min}$$
-  - *Cost Attributes* (lower is better: Price, Weight):
+  * *Cost Attributes* (Lower is better: Price, Weight, Power Consumption, Dimensions):
     $$n = \frac{\max - x}{\max - \min}$$
-- **Bayesian Rating Adjustment**: Prevents low-sample distortion using category priors:
+* **Bayesian Rating Adjustment**: Eliminates small-sample distortion by pulling low-volume ratings towards the category prior mean:
   $$R' = \left(\frac{v}{v+m}\right) R + \left(\frac{m}{v+m}\right) C$$
   *(where $v$ is review count, $m=5$ is prior weight, and $C$ is category mean rating)*.
-- **NLP Sentiment & Aspect Mining**: Incorporates NLTK VADER sentiment compound polarity and aspect counts (*battery, display, performance, camera, build*).
-- **Preference-Weighted Scoring**:
+* **NLP Sentiment Polarity & Aspect Mining**: Built-in VADER sentiment analyzer extracts compound sentiment and categorizes feedback by aspect (*battery, display, performance, camera, build, durability, comfort*).
+* **Preference-Weighted Scoring**:
   $$S(P) = \sum_{j} w_j \cdot n(P, j) \quad \text{where } \sum w_j = 1.0$$
-- **Preset Profiles**: **Budget-first**, **Performance-first**, and **Reliability-first** presets, plus custom sliders that auto-normalize.
-- **Explainability & Transparency**: Generates plain-language conditional recommendations (*"If low price is your priority, Product A is the better fit..."*), score bars, criteria breakdown table, pros/cons, and an explicit **Decision Support Notice**.
-
-### 2. Location-Aware Delivery & Checkout (Modules 7.7 & 7.8)
-- **Option A: "Use Current Location"**:
-  - Transparent consent modal explaining why location is required.
-  - Browser HTML5 Geolocation API with backend OpenStreetMap Nominatim proxy (rate-limited and cached).
-  - Verifies detected postal PIN code against active delivery serviceable areas.
-  - Pre-populates an **editable** address form for customer confirmation.
-  - Graceful fallback: If permission is denied or GPS times out, transitions seamlessly to Option B without blocking checkout.
-- **Option B: "Select Another Location"**:
-  - Choose from saved addresses tagged as **Home**, **Parents**, **Office**, **Hostel**, or **Gift**.
-  - Or enter any address with strict 6-digit Indian PIN code validation and instant serviceability check.
-- Both options end in the identical confirmed address summary and sandbox order completion step!
+* **Preset Profiles**: One-click presets for **Budget-First**, **Performance-First**, and **Reliability-First**, plus interactive sliders with automatic dynamic normalization.
+* **Plain-Language Explanations & Decision Support**: Explains the trade-offs in conversational English (*"If budget is your priority, Product A is the superior choice..."*) accompanied by a formal **Decision Support Notice**.
 
 ---
 
-## 🏗️ Architecture & Modules (All 12 Modules Built)
+### 2. Location-Aware Delivery & Checkout
+* **Option A: "Use Current Location (GPS)"**:
+  * Transparent consent dialog explaining why location is required.
+  * Browser HTML5 Geolocation API with rate-limited, cached backend proxy to OpenStreetMap Nominatim.
+  * Resolves coordinate latitude/longitude into postal PIN code, city, and state.
+  * Checks live serviceability against registered delivery fulfillment hubs.
+  * Pre-populates an editable address form for customer verification.
+  * Automatic graceful fallback to manual entry if GPS permission is denied or times out.
+* **Option B: "Select Another Location"**:
+  * Manual 6-digit postal PIN code verification with instant delivery ETA calculation.
+  * Saved address book tagged by labels (*Home, Parents, Office, Hostel, Gift*).
+* **Delivery Location Header Widget**:
+  * Clickable *"Deliver to [City] [PIN] | Update location"* widget in the top navigation bar with 1-click location switching.
+
+---
+
+### 3. Personalized Hybrid Recommendation Engine
+* **Content-Based Spec Vectorization**: Generates TF-IDF spec vectors from brands, categories, descriptions, and hardware specifications.
+* **Cosine Similarity Matching**: Computes pairwise cosine similarity between products.
+* **Interaction Weighting**: Tracks user actions (`view` = 1.0, `compare` = 2.0, `cart` = 3.0) to dynamically tune recommendations.
+* **Cold-Start Fallback**: Recommends highest-rated Bayesian products for newly registered or guest users.
+
+---
+
+### 4. Professional Enterprise UI & Admin Portal
+* **Modern Slate & Electric Indigo Theme**:
+  * Clean, bespoke aesthetic (`#0f172a` deep slate, `#4f46e5` electric indigo, `#38bdf8` cyan highlights).
+  * 3-part search bar with dynamic department dropdown, wide input, and one-click query.
+  * Account & Lists menu with single-click demo logins and order tracking.
+  * Floating compare tray with badge counter and direct comparison drawer.
+* **Interactive Filter Sidebar**:
+  * Filter by delivery speed (*Get it by Tomorrow, 2-Day Delivery*).
+  * Filter by customer rating (*4★ & Up, 3★ & Up, 2★ & Up*).
+  * Interactive price range slider with budget presets (*Under ₹10k, ₹10k–₹25k, ₹25k–₹50k*).
+  * Dynamic brand checkboxes generated directly from active catalogue inventory.
+* **Enterprise Seller Admin Portal**:
+  * Real-time Gross Merchandise Value (GMV) revenue tracking and order count metrics.
+  * Full Catalogue Inventory Management: add, edit, or delete product SKUs.
+  * Postal PIN Logistics Hub Manager: add serviceable PINs and toggle 24-hr express delivery.
+  * Order Fulfillment Operations: update order states (`PENDING` $\to$ `PROCESSING` $\to$ `SHIPPED` $\to$ `DELIVERED`).
+
+---
+
+## 🏗️ Architecture & Module Map (All 12 Modules Built)
 
 ```
-                                  [ REACT CLIENT (Vite) ]
-                                 /          |            \
-                   Option A (GPS)   Option B (Manual)   Multi-Criteria Weights
-                          |                 |                      |
-            +-------------v-----------------v----------------------v---------------+
-            |                         FASTAPI BACKEND                              |
-            |                                                                      |
-            |   [Auth Service]   [Geocoding Proxy]   [AI Comparison Engine]       |
-            |       Bcrypt             OSM Nominatim        Min-Max Benefit/Cost   |
-            |       JWT                1 req/s + Cache      Bayesian Adjustment    |
-            |                                               NLP VADER Sentiment    |
-            |                                                                      |
-            |   [Recommendation Engine]             [Order & Cart Controller]      |
-            |       TF-IDF + Cosine Sim                 Stock Management           |
-            |       Cold-Start Fallback                 Sandbox Payment Engine     |
-            +----------------------------------------------------------------------+
-                                       |              |
-                           [ SQLAlchemy ORM ]   [ In-Memory Cache ]
-                                       |
-                              [ Database Layer ]
-                         SQLite (Dev) / PostgreSQL (Prod)
+                              [ REACT 18 CLIENT (Vite) ]
+                             /             |            \
+               Option A (GPS)      Option B (Manual)    Multi-Criteria Weights
+                      |                    |                     |
+        +-------------v--------------------v---------------------v---------------+
+        |                            FASTAPI REST BACKEND                        |
+        |                                                                        |
+        |   [Auth Service]        [Geocoding Proxy]       [AI Comparison Engine] |
+        |       Bcrypt Password       OSM Nominatim Proxy     Min-Max Normalizer |
+        |       JWT Session Tokens    Rate-Limited & Cached   Bayesian Ratings   |
+        |                                                     VADER Sentiment    |
+        |                                                                        |
+        |   [Recommendation Engine]                       [Cart & Order Hub]     |
+        |       TF-IDF Vectorizer                             Inventory Locks    |
+        |       Cosine Similarity Matrix                      Atomic Transactions|
+        |       Cold-Start Fallback                           Sandbox Payments   |
+        +------------------------------------------------------------------------+
+                                   |                |
+                          [ SQLAlchemy ORM ]   [ Local In-Memory Cache ]
+                                   |
+                          [ Database Layer ]
+                    SQLite (Dev/Demo) / PostgreSQL (Prod)
 ```
 
-1. **7.1 User Management**: Salted bcrypt password hashing, JWT sessions, role-based access (`customer`/`admin`), user preference profiles.
-2. **7.2 Product Management**: Hierarchical categories, brands, specs (key/value/unit), stock availability, warranty months.
-3. **7.3 Search & Filtering**: Keyword search, category chips, brand filter, price range slider, rating filters, interaction event logging (`view`, `compare`, `cart`).
-4. **7.4 AI Comparison Engine**: Benefit/cost normalization, Bayesian ratings, VADER sentiment, weight presets/sliders, plain-language explanation, decision-support disclaimer.
-5. **7.5 Personalized Recommendations**: Content-based TF-IDF vectorization with cosine similarity, interaction weighting, and cold-start top-rated fallback.
-6. **7.6 Reviews & Rating**: 1 review per user per product, 1-5 stars + text, VADER sentiment polarity scores, aspect extraction badges.
-7. **7.7 Current Location Detection**: Geolocation API, backend Nominatim proxy, rate limiting, serviceable PIN verification, editable confirmation.
-8. **7.8 Alternative Location Selection**: Manual PIN input, saved address reuse, serviceability check.
-9. **7.9 Address Management**: Address book tagged by labels (*Home, Parents, Office, Hostel, Gift*), de-duplication, default toggle.
-10. **7.10 Cart & Orders**: Cart state, inventory reservation, atomic checkout, sandbox payment simulation (`PAID_SANDBOX`).
-11. **7.11 Database Management**: 3NF schema, indexes, foreign keys, auto-seed service with 32+ products, detailed specs, 36+ reviews, and 8 delivery hubs.
-12. **7.12 Admin Portal**: System KPIs (revenue, orders, comparisons), catalogue CRUD, delivery PIN management, order status operations (`CONFIRMED` $\to$ `SHIPPED` $\to$ `DELIVERED`).
+1. **Module 7.1 — User Management & Authentication**: Salted bcrypt hashing, JWT access tokens, role-based security (`customer`/`admin`).
+2. **Module 7.2 — Product Catalog Management**: Hierarchical categories, brands, specifications, stock tracking, and warranty.
+3. **Module 7.3 — Search & Filtering**: Keyword search, dynamic category filtering, brand checkboxes, budget sliders, and interaction event logging (`view`, `compare`, `cart`).
+4. **Module 7.4 — AI Comparison Engine**: Benefit/cost normalization, Bayesian adjusted ratings, VADER aspect sentiment, customizable weights, plain-language explanation, and decision support notice.
+5. **Module 7.5 — Personalized Recommendations**: TF-IDF spec vectors, cosine similarity, user interest weighting, and cold-start fallback.
+6. **Module 7.6 — Reviews & Sentiment Mining**: Single review per user per product, 1-5 star ratings, VADER sentiment polarity, and aspect tags.
+7. **Module 7.7 — Current Location Detection**: HTML5 Geolocation, backend Nominatim proxy, rate limiting, serviceable PIN verification, and editable confirmation.
+8. **Module 7.8 — Alternative Location Selection**: Manual PIN entry, saved address reuse, and express delivery validation.
+9. **Module 7.9 — Address Book Management**: Multi-address book tagged by labels (*Home, Parents, Office, Hostel, Gift*), de-duplication, and default selection.
+10. **Module 7.10 — Cart & Order Checkout**: Atomic cart updates, inventory reservation, order placement, and sandbox payment simulation (`PAID_SANDBOX`).
+11. **Module 7.11 — Database Management**: 3NF normalized schema, foreign keys, indexes, and auto-seed service across 9 departments with 40+ products.
+12. **Module 7.12 — Seller Admin Portal**: Business KPIs (revenue, orders, active SKUs), inventory CRUD, delivery hub management, and fulfillment status pipeline.
 
 ---
 
 ## 🔑 Demo Accounts (Single-Click Login in UI)
 
-| Role | Email | Password | Access / Capabilities |
+| Role | Email | Password | Access Capabilities |
 | :--- | :--- | :--- | :--- |
-| **Demo Customer** | `student@poornima.edu.in` | `Student@123` | Browsing, AI Comparison, Cart, GPS Checkout, Writing Reviews |
-| **Platform Admin** | `admin@poornima.edu.in` | `Admin@123` | Catalogue CRUD, PIN Management, Order Operations, Analytics |
+| **Platform Admin** | `admin@poornima.edu.in` | `Admin@123` | Seller Portal, Inventory CRUD, Delivery Hub PINs, Order Fulfillment |
+| **Customer User** | `student@poornima.edu.in` | `Student@123` | Catalogue Browsing, AI Comparison, Cart, GPS Checkout, Reviews |
+| **Demo Customer** | `customer@poornima.edu.in` | `Customer@123` | Alternative Customer Profile with Pre-saved Addresses |
 
 ---
 
 ## 🧪 Automated Testing Verification
 
-The automated test suite (`pytest`) verifies all 16 test cases specified in the project requirements:
+The automated test suite (`pytest`) verifies 15 end-to-end test cases covering the entire functional lifecycle:
 
 ```
 tests/test_auth.py::test_tc01_user_registration PASSED                   [  6%]
@@ -148,7 +199,7 @@ Given the reference attribute score matrix:
   $$S(A) = 0.15(0.80) + 0.40(0.55) + 0.20(0.60) + 0.15(0.70) + 0.05(0.60) + 0.05(1.00) = \mathbf{0.645}$$
   $$S(B) = 0.15(0.50) + 0.40(0.90) + 0.20(0.75) + 0.15(0.65) + 0.05(0.70) + 0.05(1.00) = 0.7675 \to \mathbf{0.768}$$
 * **Symmetry**: Swapping A and B mirrors scores exactly.
-* **Weight Directionality**: Moving weights adjusts ranking strictly in the expected direction.
+* **Weight Directionality**: Moving weights adjusts ranking strictly in the mathematically expected direction.
 
 ---
 
@@ -170,7 +221,7 @@ cd frontend
 npm install --legacy-peer-deps
 npm run dev
 ```
-*Frontend runs on `http://localhost:3000` with local proxy to `http://127.0.0.1:8000`.*
+*Frontend runs on `http://localhost:3000` with proxy configured to `http://127.0.0.1:8000`.*
 
 ### 3. Run Automated Tests
 ```powershell
@@ -184,12 +235,15 @@ cd backend
 ```bash
 docker compose up --build
 ```
-Runs multi-container architecture with Nginx frontend (`:3000`), FastAPI backend (`:8000`), and PostgreSQL 16 database (`:5432`).
+Spins up multi-container infrastructure:
+- **Frontend**: Nginx React SPA on port `3000`
+- **Backend**: FastAPI ASGI on port `8000`
+- **Database**: PostgreSQL 16 on port `5432`
 
 ---
 
-## 📚 Project Documentation & Academic Artifacts
-- **[System Architecture & Privacy Compliance](./docs/ARCHITECTURE.md)**
+## 📚 Technical Documentation Artifacts
+- **[System Architecture & Data Flows](./docs/ARCHITECTURE.md)**
 - **[3NF Entity-Relationship (ER) Diagram](./docs/ER_DIAGRAM.md)**
 - **[Data Flow Diagrams (Level-0 and Level-1)](./docs/DFD_LEVEL_0_1.md)**
 - **[Automated Test Report & Mathematical Proofs](./docs/TEST_REPORT.md)**
@@ -197,8 +251,8 @@ Runs multi-container architecture with Nginx frontend (`:3000`), FastAPI backend
 ---
 
 ## ⚖️ Legal & Privacy Compliance
-Designed in strict alignment with **India's Digital Personal Data Protection (DPDP) Act 2023**:
-- **Explicit Consent**: Geolocation is accessed strictly after an explicit click on Option A with clear purpose explanation.
+Built in strict alignment with **India's Digital Personal Data Protection (DPDP) Act 2023**:
+- **Explicit Consent**: Geolocation is accessed strictly after an explicit click on Option A with a clear purpose description.
 - **Purpose Limitation**: Coordinates are used solely for reverse geocoding and delivery validation; no continuous tracking.
 - **User Control & Deletion**: Raw coordinates are discarded unless the user explicitly saves the address. Users can view, edit, and delete any saved address.
 - **Decision Support Notice**: AI comparison outputs transparently declare that they are personalized decision-support estimates rather than absolute claims of product superiority.
