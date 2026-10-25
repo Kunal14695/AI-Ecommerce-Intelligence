@@ -162,7 +162,7 @@ export default function AdminDashboardPage() {
 
   return (
     <div style={{ background: '#f0f2f2', minHeight: '100vh', paddingBottom: '48px' }}>
-      {/* Amazon Seller Central Top Bar */}
+      {/* Seller Portal Top Bar */}
       <div
         style={{
           background: '#232f3e',
@@ -177,7 +177,7 @@ export default function AdminDashboardPage() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ display: 'flex', alignItems: 'baseline' }}>
             <span style={{ fontSize: '1.25rem', fontWeight: 900, letterSpacing: '-0.5px' }}>smartcommerce</span>
-            <span style={{ fontSize: '0.85rem', color: '#febd69', fontWeight: 700, marginLeft: '3px' }}>seller central</span>
+            <span style={{ fontSize: '0.85rem', color: '#818cf8', fontWeight: 700, marginLeft: '3px' }}>admin portal</span>
           </div>
           <span style={{ fontSize: '0.75rem', background: '#37475a', padding: '3px 8px', borderRadius: '4px' }}>
             Store: SmartCommerce Direct (India) 🇮🇳
@@ -197,7 +197,7 @@ export default function AdminDashboardPage() {
       </div>
 
       <div className="container" style={{ paddingTop: '24px' }}>
-        {/* Amazon Seller KPI Grid */}
+        {/* Seller KPI Metrics Grid */}
         <div
           style={{
             display: 'grid',
@@ -272,7 +272,7 @@ export default function AdminDashboardPage() {
           </div>
         </div>
 
-        {/* Tab Navigation (Amazon Style) */}
+        {/* Tab Navigation */}
         <div
           style={{
             display: 'flex',

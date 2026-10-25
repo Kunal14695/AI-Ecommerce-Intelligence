@@ -129,7 +129,7 @@ function AppContent() {
         onClose={() => setAuthModalOpen(false)}
       />
 
-      {/* Amazon-style Location Picker Modal */}
+      {/* Location Selector Modal */}
       <LocationModal />
 
       <Footer />
