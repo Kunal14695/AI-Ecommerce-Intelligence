@@ -2,6 +2,7 @@
 > **B.Tech Minor Project — Poornima University, Jaipur**  
 > Department of Computer Engineering
 
+[![Live Frontend](https://img.shields.io/badge/Vercel-Live%20App-000000?style=flat&logo=vercel&logoColor=white)](https://ai-ecommerce-intelligence.vercel.app/)
 [![Live Backend](https://img.shields.io/badge/Render-Live%20API-46E3B7?style=flat&logo=render&logoColor=white)](https://ai-ecommerce-api-64m8.onrender.com)
 [![API Docs](https://img.shields.io/badge/Swagger-OpenAPI%20Docs-85EA2D?style=flat&logo=swagger&logoColor=black)](https://ai-ecommerce-api-64m8.onrender.com/docs)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
@@ -18,10 +19,10 @@ A complete, production-deployed full-stack e-commerce intelligence platform buil
 
 | Component | Platform | Live URL | Description |
 | :--- | :--- | :--- | :--- |
+| **Frontend Web App** | **Vercel** | [https://ai-ecommerce-intelligence.vercel.app/](https://ai-ecommerce-intelligence.vercel.app/) | Live interactive React 18 client application |
 | **Backend API** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com](https://ai-ecommerce-api-64m8.onrender.com) | FastAPI REST service, SQLite database & ML algorithms |
 | **API Docs (Swagger)** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com/docs](https://ai-ecommerce-api-64m8.onrender.com/docs) | Interactive OpenAPI interactive test console |
 | **API Health Check** | **Render** | [https://ai-ecommerce-api-64m8.onrender.com/health](https://ai-ecommerce-api-64m8.onrender.com/health) | Live service status probe |
-| **Frontend App** | **Vercel** | Deployed on Vercel | React 18 SPA with responsive styling |
 | **Source Code** | **GitHub** | [Kunal14695/AI-Ecommerce-Intelligence](https://github.com/Kunal14695/AI-Ecommerce-Intelligence) | Official project repository |
 
 ---
