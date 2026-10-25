@@ -22,7 +22,7 @@ class ServiceableAreaCreate(BaseModel):
     estimated_delivery_days: int = 3
 
 class OrderStatusUpdate(BaseModel):
-    status: str = Field(..., enum=["CONFIRMED", "SHIPPED", "DELIVERED", "CANCELLED"])
+    status: str = Field(..., pattern=r"^(CONFIRMED|SHIPPED|DELIVERED|CANCELLED)$")
 
 @router.get("/dashboard")
 def get_admin_dashboard(

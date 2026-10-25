@@ -22,7 +22,7 @@ def search_products(
     brand: Optional[str] = None,
     min_price: Optional[float] = None,
     max_price: Optional[float] = None,
-    sort_by: Optional[str] = Query("relevance", enum=["relevance", "price_asc", "price_desc", "rating"]),
+    sort_by: Optional[str] = Query("relevance", description="relevance, price_asc, price_desc, rating"),
     db: Session = Depends(get_db)
 ):
     query = db.query(Product)

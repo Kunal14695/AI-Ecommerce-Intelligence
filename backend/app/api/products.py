@@ -58,7 +58,7 @@ def get_products(
     min_price: Optional[float] = None,
     max_price: Optional[float] = None,
     min_rating: Optional[float] = None,
-    sort_by: Optional[str] = Query("popular", enum=["popular", "price_asc", "price_desc", "rating", "newest"]),
+    sort_by: Optional[str] = Query("popular", description="popular, price_asc, price_desc, rating, newest"),
     db: Session = Depends(get_db)
 ):
     query = db.query(Product)
