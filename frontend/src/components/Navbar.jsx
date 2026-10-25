@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { useCompare } from '../context/CompareContext';
-import { ShoppingCart, Scale, Search, User, LogOut, Shield, Sparkles, MapPin } from 'lucide-react';
+import { ShoppingCart, Scale, Search, User, LogOut, Shield, MapPin } from 'lucide-react';
 
 export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
   const { user, logout, isAdmin } = useAuth();
@@ -26,7 +26,6 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
           style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}
         >
           <div className="logo-badge">
-            <Sparkles size={18} />
             SmartCommerce AI
           </div>
         </div>
