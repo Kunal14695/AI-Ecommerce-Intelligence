@@ -137,7 +137,7 @@ export default function AdminDashboardPage() {
   return (
     <div className="container" style={{ paddingTop: '2rem' }}>
       <div style={{ marginBottom: '1.5rem' }}>
-        <h1 style={{ fontSize: '2rem', fontWeight: 800 }}>Poornima Admin Portal</h1>
+        <h1 style={{ fontSize: '2rem', fontWeight: 800 }}>Admin Portal</h1>
         <p style={{ fontSize: '0.9rem', color: '#64748b' }}>
           Catalogue management, serviceable delivery PINs, order operations, and customer analytics
         </p>
@@ -357,7 +357,7 @@ export default function AdminDashboardPage() {
               </div>
               <div>
                 <label style={{ fontSize: '0.8rem', fontWeight: 600 }}>Area Name *</label>
-                <input required type="text" value={newArea} onChange={e => setNewArea(e.target.value)} placeholder="e.g. Poornima Sitapura Hub" style={{ width: '100%', padding: '8px', borderRadius: '6px', border: '1px solid #cbd5e1' }} />
+                <input required type="text" value={newArea} onChange={e => setNewArea(e.target.value)} placeholder="e.g. Sitapura Logistics Hub" style={{ width: '100%', padding: '8px', borderRadius: '6px', border: '1px solid #cbd5e1' }} />
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
                 <div>

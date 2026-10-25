@@ -41,14 +41,14 @@ export default function Footer() {
           </h4>
           <p style={{ fontSize: '0.85rem', lineHeight: 1.6 }}>
             B.Tech Minor Project<br />
-            <strong>Poornima University, Jaipur</strong><br />
+
             Department of Computer Engineering
           </p>
         </div>
       </div>
 
       <div className="container" style={{ borderTop: '1px solid #1e293b', paddingTop: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.8rem' }}>
-        <span>© 2026 Poornima University. All rights reserved.</span>
+        <span>© 2026 SmartCommerce AI. All rights reserved.</span>
         <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <ShieldCheck size={16} color="#10b981" /> Decision Support Prototype
         </span>

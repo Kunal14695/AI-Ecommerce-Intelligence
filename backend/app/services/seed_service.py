@@ -31,7 +31,7 @@ def seed_database(db: Session):
     admin_user = User(
         email="admin@poornima.edu.in",
         hashed_password=hash_password("Admin@123"),
-        full_name="Poornima Admin",
+        full_name="Admin User",
         role="admin"
     )
     student_user = User(

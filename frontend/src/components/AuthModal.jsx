@@ -52,7 +52,7 @@ export default function AuthModal({ isOpen, onClose }) {
             {isRegister ? 'Create an Account' : 'Welcome Back'}
           </h2>
           <p style={{ fontSize: '0.875rem', color: '#64748b' }}>
-            {isRegister ? 'Join Poornima AI Commerce for personalized recommendations' : 'Sign in to access your cart, addresses, and orders'}
+            {isRegister ? 'Join SmartCommerce AI for personalized recommendations' : 'Sign in to access your cart, addresses, and orders'}
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function AuthModal({ isOpen, onClose }) {
               onClick={() => handleQuickLogin('admin@poornima.edu.in', 'Admin@123')}
               style={{ fontSize: '0.78rem', flex: 1 }}
             >
-              <ShieldCheck size={13} color="#4f46e5" /> Poornima Admin
+              <ShieldCheck size={13} color="#4f46e5" /> Platform Admin
             </button>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function AuthModal({ isOpen, onClose }) {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="name@poornima.edu.in"
+                placeholder="name@example.com"
                 style={{ width: '100%', padding: '10px 12px 10px 38px', borderRadius: '8px', border: '1px solid #cbd5e1' }}
               />
             </div>

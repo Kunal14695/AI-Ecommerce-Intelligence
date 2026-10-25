@@ -86,7 +86,7 @@ export default function CheckoutPage({ onOrderPlaced, onNavigate }) {
         } catch (err) {
           setGpsError('Could not resolve GPS address. You can complete the form manually.');
           // Jaipur fallback
-          setAddressLine('ISI-2, Poornima Marg, RIICO Institutional Area, Sitapura');
+          setAddressLine('ISI-2, RIICO Institutional Area, Sitapura');
           setCity('Jaipur');
           setState('Rajasthan');
           setPincode('302022');

@@ -29,9 +29,6 @@ export default function Navbar({ onNavigate, activePage, onOpenAuth }) {
             <Sparkles size={18} />
             SmartCommerce AI
           </div>
-          <span style={{ fontSize: '0.75rem', background: '#e0e7ff', color: '#4338ca', padding: '2px 8px', borderRadius: '4px', fontWeight: 600 }}>
-            Poornima
-          </span>
         </div>
 
         {/* Global Search Bar */}
