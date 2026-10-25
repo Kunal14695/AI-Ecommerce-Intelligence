@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import { CompareProvider } from './context/CompareContext';
+import { LocationProvider } from './context/LocationContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CompareTray from './components/CompareTray';
 import AuthModal from './components/AuthModal';
+import LocationModal from './components/LocationModal';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -40,7 +42,7 @@ function AppContent() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: '#fcfcfc' }}>
       <Navbar
         activePage={currentPage}
         onNavigate={navigateTo}
@@ -66,6 +68,7 @@ function AppContent() {
         {currentPage === 'search' && (
           <ProductListPage
             searchQuery={pageParams.q}
+            initialCategory={pageParams.category_id}
             onSelectProduct={handleSelectProduct}
           />
         )}
@@ -79,6 +82,7 @@ function AppContent() {
 
         {currentPage === 'compare' && (
           <ComparePage
+            onNavigate={navigateTo}
             onSelectProduct={handleSelectProduct}
           />
         )}
@@ -98,7 +102,7 @@ function AppContent() {
 
         {currentPage === 'order-confirmation' && (
           <OrderConfirmationPage
-            order={confirmedOrder}
+            orderData={confirmedOrder}
             onNavigate={navigateTo}
           />
         )}
@@ -114,9 +118,9 @@ function AppContent() {
         )}
       </main>
 
-      {/* Floating Bottom Compare Tray */}
+      {/* Floating Compare Tray */}
       <CompareTray
-        onNavigateToCompare={() => navigateTo('compare')}
+        onOpenCompare={() => navigateTo('compare')}
       />
 
       {/* Login / Register Modal */}
@@ -124,6 +128,9 @@ function AppContent() {
         isOpen={authModalOpen}
         onClose={() => setAuthModalOpen(false)}
       />
+
+      {/* Amazon-style Location Picker Modal */}
+      <LocationModal />
 
       <Footer />
     </div>
@@ -135,7 +142,9 @@ export default function App() {
     <AuthProvider>
       <CartProvider>
         <CompareProvider>
-          <AppContent />
+          <LocationProvider>
+            <AppContent />
+          </LocationProvider>
         </CompareProvider>
       </CartProvider>
     </AuthProvider>
